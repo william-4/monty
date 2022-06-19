@@ -13,7 +13,7 @@ char *argument;
 int main(int argc, char **argv)
 {
 	FILE *file;
-	char *line = NULL;
+	char *line = NULL;  
 	size_t line_len = 0;
 	unsigned int line_cnt = 0;
 	stack_t *stack = NULL;

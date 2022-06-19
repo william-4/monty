@@ -21,10 +21,10 @@ stack_t *add_node(stack_t **stack, int n)
 
 	new->next = *stack;
 	new->prev = NULL;
-	if (*stack)
+	if ((*stack) != NULL)
 		(*stack)->prev = new;
 
 	*stack = new;
 
-	return (new);
+	return (*stack);
 }
