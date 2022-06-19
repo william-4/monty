@@ -9,5 +9,6 @@
  */
 void pall(stack_t **stack, unsigned int line_cnt __attribute__((unused)))
 {
-	print_node(*stack);
+	if (*stack)
+		print_node(*stack);
 }

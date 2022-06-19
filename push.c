@@ -40,6 +40,5 @@ void push(stack_t **stack, unsigned int line_cnt)
 		exit(EXIT_FAILURE);
 	}
 	a = atoi(argument);
-	if ((!add_node(stack, a)))
-		exit(EXIT_FAILURE);
+	add_node(stack, a);
 }
