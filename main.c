@@ -40,7 +40,6 @@ int main(int argc, char **argv)
 		if (!token || token[0] == '#')
 		{
 			line_cnt++;
-			printf("main: in the loop\n");
 			free(line);
 			continue;
 		}

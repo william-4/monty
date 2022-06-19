@@ -23,7 +23,7 @@ void opcode(stack_t **stack, unsigned int line_cnt)
 		{"div", _div},
 		{"mul", _mul},
 		{"mod", _mod},
-		{NULL, NULL}
+		{NULL, NULL} /* helps to check the end of the array */
 	};
 
 	for (i = 0; ops[i].opcode != NULL; i++) /* condition to end loop */

@@ -37,7 +37,6 @@ void push(stack_t **stack, unsigned int line_cnt)
 	if ((_isdigit(argument)) == 0)
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", line_cnt);
-		printf("_isdigit prints %d\n", _isdigit(argument)); /* _isdigit returns 1 */
 		exit(EXIT_FAILURE);
 	}
 	a = atoi(argument);

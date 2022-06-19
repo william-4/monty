@@ -12,7 +12,7 @@ void _mod(stack_t **stack, unsigned int line_cnt)
 	int mod_v = 0;
 	if (!stack || !(*stack) || !(*stack)->next)
 	{
-		fprintf(stderr, "L%u: can't mul, stack too short\n", line_cnt);
+		fprintf(stderr, "L%u: can't mod, stack too short\n", line_cnt);
 		exit(EXIT_FAILURE);
 	}
 	if ((*stack)->n == 0)
