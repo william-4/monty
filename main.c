@@ -36,11 +36,6 @@ int main(int argc, char **argv)
 	while ((getline(&line, &line_len, file)) != (-1))
 	{
 		line_cnt++;
-		if (*line == '\n')
-		{
-			free(line);
-			continue;
-		}
 		token = strtok(line, " \t\n\r");
 		if (!token || token[0] == '#')
 		{
