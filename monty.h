@@ -46,6 +46,7 @@ typedef struct instruction_s
 /*  function declarations */
 stack_t *add_node(stack_t **stack, int n);
 size_t print_node(const stack_t *stack);
+void free_list(stack_t *stack);
 void opcode(stack_t **stack, unsigned int line_cnt);
 
 /*  opcode declarations */

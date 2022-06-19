@@ -46,7 +46,7 @@ int main(int argc, char **argv)
 		opcode(&stack, line_cnt);
 	}
 	free(line);
-	free(stack);
+	free_list(stack);
 	fclose(file);
 	exit(EXIT_SUCCESS);
 }
