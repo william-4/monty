@@ -31,7 +31,7 @@ void opcode(stack_t **stack, unsigned int line_cnt)
 		if (strcmp(ops[i].opcode, token) == 0)
 		{
 			ops[i].f(stack, line_cnt);
-			exit(EXIT_SUCCESS);
+			return;
 		}
 	}
 	fprintf(stderr, "L%d: unknown instruction %s\n", line_cnt, token);
