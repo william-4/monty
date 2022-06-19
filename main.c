@@ -17,7 +17,6 @@ int main(int argc, char **argv)
 	size_t line_len = 0;
 	unsigned int line_cnt = 0;
 	stack_t *stack = NULL;
-	int i = 0;
 
 
 	if (argc != 2)
@@ -50,6 +49,6 @@ int main(int argc, char **argv)
 	}
 	free(line);
 	free(stack);
-	free(file);
+	fclose(file);
 	exit(EXIT_SUCCESS);
 }
