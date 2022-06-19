@@ -6,7 +6,7 @@
  *
  * Return: 0 if only digits, else 1
  */
-static int _isdigit(char *str)
+int _isdigit(char *str)
 {
 	if (!str || *str == '\0') /* checks if argument is given to push */
 		return (0);

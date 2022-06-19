@@ -7,8 +7,9 @@
  *
  * Return: void
  */
-void pall(stack_t **stack, unsigned int line_cnt __attribute__((unused)))
+void pall(stack_t **stack, unsigned int line_cnt)
 {
+	(void)line_cnt;
 	if (*stack)
 		print_node(*stack);
 }
