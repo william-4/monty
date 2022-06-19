@@ -9,5 +9,6 @@
  */
 void nop()
 {
+        printf("I am the nop opcode");
         return;
 }
