@@ -52,8 +52,11 @@ void opcode(stack_t **stack, unsigned int line_cnt);
 /*  opcode declarations */
 void push(stack_t **stack, unsigned int line_cnt);
 void pall(stack_t **stack, unsigned int line_cnt __attribute__((unused)));
-void pint (stack_t **stack, unsigned int line_cnt);
+void pint(stack_t **stack, unsigned int line_cnt);
 void pop(stack_t **stack, unsigned int line_cnt);
+void swap(stack_t **stack, unsigned int line_cnt);
+void add(stack_t **stack, unsigned int line_cnt);
+void nop();
 
 
 #endif /* end  */
