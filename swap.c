@@ -12,9 +12,9 @@ void swap (stack_t **stack, unsigned int line_cnt)
 	int n = 0;
 	stack_t *tmp = NULL;
 
-	if (!stack || !*stack || !(*stack)->next)
+	if (!stack || !(*stack) || !((*stack)->next))
 	{
-		fprintf(stderr, "L%d: can't swap, stack too short\n", line_cnt);
+		fprintf(stderr, "L%u: can't swap, stack too short\n", line_cnt);
 		exit(EXIT_FAILURE);
 	}
 
