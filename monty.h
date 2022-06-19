@@ -1,6 +1,7 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#define  _GNU_SOURCE
 #include <ctype.h> /* isdigit(int arg)  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -53,6 +54,8 @@ void opcode(stack_t **stack, unsigned int line_cnt);
 /*  opcode declarations */
 void push(stack_t **stack, unsigned int line_cnt);
 void pall(stack_t **stack, unsigned int line_cnt __attribute__((unused)));
+void pint (stack_t **stack, unsigned int line_cnt);
+void pop(stack_t **stack, unsigned int line_cnt);
 
 
 #endif /* end  */

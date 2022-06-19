@@ -14,6 +14,8 @@ void opcode(stack_t **stack, unsigned int line_cnt)
 	instruction_t ops[] = {
 		{"push", push},
 		{"pall", pall},
+		{"pint", pint},
+		{"pop", pop},
 		{NULL, NULL}
 	};
 
