@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * mul - multiplies element 2 by element 1
+ * _mul - multiplies element 2 by element 1
  * @stack: the stack passed by main
  * @line_cnt: the line number
  *
@@ -10,6 +10,7 @@
 void _mul(stack_t **stack, unsigned int line_cnt)
 {
 	int mul_v = 0;
+
 	if (!stack || !(*stack) || !(*stack)->next)
 	{
 		fprintf(stderr, "L%u: can't mul, stack too short", line_cnt);

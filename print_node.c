@@ -18,4 +18,4 @@ size_t print_node(const stack_t *stack)
 	}
 
 	return (c);
-} 
+}

@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * mod - returns modulus of  element 2 by element 1
+ * _mod - returns modulus of  element 2 by element 1
  * @stack: the stack passed by main
  * @line_cnt: the line number
  *
@@ -10,6 +10,7 @@
 void _mod(stack_t **stack, unsigned int line_cnt)
 {
 	int mod_v = 0;
+
 	if (!stack || !(*stack) || !(*stack)->next)
 	{
 		fprintf(stderr, "L%u: can't mod, stack too short\n", line_cnt);

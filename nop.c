@@ -2,12 +2,13 @@
 
 /**
  * nop - doesn't do anything
- * @stack: stack passed by main
- * @line_cnt: line number
- * 
+ * @stack: the stack passed by main
+ * @line_cnt: the line number
+ *
  * Return: void
  */
-void nop()
+void nop(stack_t **stack, unsigned int line_cnt)
 {
-        return;
+	(void)stack;
+	(void)line_cnt;
 }

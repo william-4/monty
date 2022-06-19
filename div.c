@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * div - divides element 2 by element 1
+ * _div - divides element 2 by element 1
  * @stack: the stack passed by main
  * @line_cnt: the line number
  *
@@ -10,6 +10,7 @@
 void _div(stack_t **stack, unsigned int line_cnt)
 {
 	int div_v = 0;
+
 	if (!stack || !(*stack) || !(*stack)->next)
 		fprintf(stderr, "L%u: can't div, stack too short", line_cnt);
 	if ((*stack)->n == 0)
