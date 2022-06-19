@@ -48,15 +48,14 @@ stack_t *add_node(stack_t **stack, int n);
 size_t print_node(const stack_t *stack);
 void opcode(stack_t **stack, unsigned int line_cnt);
 
-
 /*  opcode declarations */
 void push(stack_t **stack, unsigned int line_cnt);
-void pall(stack_t **stack, unsigned int line_cnt __attribute__((unused)));
+void pall(stack_t **stack, unsigned int line_cnt);
 void pint(stack_t **stack, unsigned int line_cnt);
 void pop(stack_t **stack, unsigned int line_cnt);
 void swap(stack_t **stack, unsigned int line_cnt);
 void add(stack_t **stack, unsigned int line_cnt);
-void nop();
+void nop(stack_t **stack, unsigned int line_cnt);
 void sub(stack_t **stack, unsigned int line_cnt);
 void _div(stack_t **stack, unsigned int line_cnt);
 void _mul(stack_t **stack, unsigned int line_cnt);
