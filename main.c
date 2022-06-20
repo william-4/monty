@@ -39,7 +39,6 @@ int main(int argc, char **argv)
 		token = strtok(line, " \t\n\r");
 		if (!token || token[0] == '#')
 		{
-			free(line);
 			continue;
 		}
 		argument = strtok(NULL, " \t\n\r");
