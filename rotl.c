@@ -1,5 +1,14 @@
 #include "monty.h"
 
+
+/**
+ * rotl - rotates the stack
+ * @stack: the stack passed by main
+ * @line_cnt: the line number
+ *
+ * Return: void
+ */
+
 void rotl(stack_t **stack, unsigned int line_cnt)
 {
 	(void)stack;
