@@ -12,7 +12,7 @@ void add(stack_t **stack, unsigned int line_cnt)
 	int sum = 0;
 
 	if (!stack || !(*stack) || !(*stack)->next)
-		fprintf(stderr, "L%u: can't add, stack too short", line_cnt);
+		fprintf(stderr, "L%u: can't add, stack too short\n", line_cnt);
 
 	sum = (*stack)->n + (*stack)->next->n;
 	pop(stack, line_cnt);
