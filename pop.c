@@ -22,4 +22,5 @@ void pop(stack_t **stack, unsigned int line_cnt)
 	if (!*stack)
 		return;
 	(*stack)->prev = NULL;
+	free(tmp);
 }
